@@ -1,0 +1,2 @@
+allow hwservicemanager gpsd_exec:file getattr;
+allow hwservicemanager sysfs:file read;

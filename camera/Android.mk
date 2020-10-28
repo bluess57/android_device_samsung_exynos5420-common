@@ -39,6 +39,7 @@ LOCAL_STATIC_LIBRARIES := \
     libminui
 
 LOCAL_CFLAGS += -DGAIA_FW_BETA
+LOCAL_CFLAGS += -Wno-unused-parameter
 
 LOCAL_C_INCLUDES += \
     system/media/camera/include \
@@ -89,7 +90,8 @@ LOCAL_STATIC_LIBRARIES := \
     libbase \
     libminui
 
-LOCAL_CFLAGS += -DGAIA_FW_BETA
+LOCAL_CFLAGS += -DGAIA_FW_BETA -Wno-gnu-designator
+LOCAL_CFLAGS += -Wno-unused-parameter
 
 ifneq ($(BOARD_CAMERA_FRONT_ROTATION),)
 LOCAL_CFLAGS += -DFRONT_ROTATION=$(BOARD_CAMERA_FRONT_ROTATION)
